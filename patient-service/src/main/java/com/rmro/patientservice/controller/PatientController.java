@@ -26,6 +26,8 @@ public class PatientController {
         this.patientService = patientService;
     }
 
+    //get patient from db
+
     @GetMapping
     @Operation(summary = "Get Patients")
     public ResponseEntity<List<PatientResponseDTO>> getPatients() {
